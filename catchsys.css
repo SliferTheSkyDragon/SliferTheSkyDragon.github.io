@@ -23,6 +23,9 @@ table, th, td {
 }
 table {
     background: white;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .tableText{
