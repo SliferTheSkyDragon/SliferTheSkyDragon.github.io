@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #111;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion{
+	width: 75%;
+	padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    background: #FFBE7D;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tableText{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: #000;
+    padding: 0 6px;
+    max-height: 0;
+    text-align: center;
+}
+
+.accordion-item{
+    border-bottom: 1px solid #f1f1f1;
+    padding: 20px 0;
+}
+
+.item-header{
+    padding: 14px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icon{
+    width: 28px;
+    height: 28px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    position: absolute;
+    left: 85%;
+}
+
+.text{
+    color: #FFBE7D;
+    padding: 0 6px;
+    max-height: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.accordion-item.active .tableText{
+    max-height: 600px;
+    transition: .4s linear;
+}
+
+.accordion-item.active .text{
+    max-height: 600px;
+    transition: .4s linear;
+}
+
+.kt-blocks-accordion-title-wrap {
+    display: inline;
+    width: 100%;
+    text-align: center;
+}
+.exp {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.heart {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.berry {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.caught {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.charm {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.coin {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.common {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.egg {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.gb {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.legend {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.loot {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.mb {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.pb {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.pkb {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.quest {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.rare {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.repel {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.shiny {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.superrare {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.token {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.ub {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.uncommon {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.xpshare {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.order {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.catchchart {
+	display: inline;
+	width:800px;
+	height:200px;
+}
+.ticket {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+.fire {
+	display: inline;
+	width:20px;
+	height:20px;
+}
+img.logo{
+  width: 250px;
+  height: auto;
+  top: 5px;
+  right: 100px;
+}
+.quest1 {
+	display: inline;
+	width:500px;
+	height:200px;
+}

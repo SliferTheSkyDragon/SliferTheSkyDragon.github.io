@@ -19,9 +19,9 @@ body{
     margin-top:300px;
 }
 .content{
-    min-width: 300px;
+    min-width: 200px;
     position: absolute;
-    margin-top: 322px;
+    margin-top: 340px;
 }
 .content a{
     text-decoration: none;

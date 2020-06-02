@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Promo - PokeMeow Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="promsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+        <a href="index.html">
+        <div style="text-align: center;"><img style="position:relative; WIDTH:100%; HEIGHT:auto;max-width: 600px;" src="meow.png"></div>
+    </a>
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">When are new Golden <img src="golden.png" alt="[pkb]" class="common"> Promo Pokemon released</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Golden <img src="golden.png" alt="[pkb]" class="common"> Pokemon are released on special occasions, such as Server Milestones, special Holidays/celebrations, or certain birthdays.<br/>
+                <br/>
+                Server Milestones: New Golden <img src="golden.png" alt="[pkb]" class="common"> Pokemon are released when PokeMeow reaches certain server count milestones. These milestones include:<br/>
+                - 500, 1,000, 2,500, 5,000, 10,000, 25,000, 50,000, 100,000.<br/>
+                - Future promos will be decided at different numbers (possibly every 50k after 100,000)<br/>
+                <br/>
+                Holidays/Celebrations: These include: Easter, Halloween, Christmas & New Years, as well as yearly anniversaries for PokeMeow.<br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Who decides about Promo?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Generally, Golden Promo's are decided by Gopi. For Birthdays, they are decided by the birthday of the staff member. Shiny <img src="shiny.png" alt="[pkb]" class="common"> Patreon supporters also have the ability to decide Golden <img src="golden.png" alt="[pkb]" class="common"> Promo's (for milestone/holiday promos only).<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How do I Get a Golden <img src="golden.png" alt="[pkb]" class="common"> Larvitar or the Active Trainer role?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Active contributors with meaningful contributions to suggestions/bug reports/helping others or activity in #general will be put into consideration for codes and the active trainer role by server staff.  As a MINIMUM requirement, you need to have spent at least 7 days (probably closer to a month since the server is growing fast) in the support server to have a chance at being considered. Note: Time spent in this server does not necessarily mean that you will get the role.<br/>
+                <br/>
+                There are limits to how many codes will be given out for specific Pokemon. They are given out arbitrarily to users (could be multiple gifts in a day, 1 gift a week, or even just 1 gift a month depending on activity). The requirements for active trainer will likely see an increase as the server grows.<br/>
+                <br/>
+                Do not beg for codes or argue why you deserve codes. If you are a consistent contributor to the support server and a frequent user of the bot in this server, you will eventually receive one for your dedication.<br/>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>
