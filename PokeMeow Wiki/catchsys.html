@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catchsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT: 25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Base catch rates of each ball type</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="pkb.png" alt="[pkb]" class="pkb"> 10% <img src="gb.png" alt="[gb]" class="gb"> 25% <img src="ub.png" alt="[ub]" class="ub"> 35% <img src="pb.png" alt="[pb]" class="pb"> 50% <img src="mb.png" alt="[mb]" class="mb"> 100%<br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Base catch rates for each rarity</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="common.png" alt="[pkb]" class="common"> 70% <img src="uncommon.png" alt="[pkb]" class="uncommon"> 60% <img src="rare.png" alt="[rare]" class="rare"> 37% <img src="superrare.png" alt="[pkb]" class="superrare"> 20% <img src="legend.png" alt="[pkb]" class="legend"> 5% <img src="shiny.png" alt="[pkb]" class="shiny"> (Event shiny) 0% <img src="shiny.png" alt="[pkb]" class="shiny"> (Full-odds shiny) 64%<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Catch Rate Table by Rarity/Balls used</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="catchchart.png" alt="[pkb]" class="catchchart">        
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Can you decrease or eliminate the 7 second wait timer for catching Pokemon?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                No. Without the wait timer, the bot would be overloaded by traffic. In the future, the wait timer may actually see an increase due to the volume of users on PokeMeow.<br/>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT: 25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Catching Quest Task/Reward</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="quest1.png" alt="[EXP]" class="quest1"><br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Encounter Quest Task/Reward</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="quest2.png" alt="[EXP]" class="quest1"><br/>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>

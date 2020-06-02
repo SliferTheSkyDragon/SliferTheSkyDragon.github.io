@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT:25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Buddy Feature</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                - You can set any Pokemon as your buddy and gain <img src="exp.png" alt="[EXP]" class="exp">  and <img src="heart.png" alt="[Frienship]" class="heart"> by <img src="caught.png" alt="[EXP]" class="caught"> catching Pokemon,  <img src="quest.png" alt="[EXP]" class="quest"> completing quests , <img src="egg.png" alt="[egg]" class="egg"> hatching eggs, and eventually battling.<br/>          
+                - Once you set a Pokemon as your buddy, it will be assigned random IVs for ATK, DEF, HP, and SPEED. These IVs range from 0-15 for Regular/Shiny Pokemon and 0-20 for Golden Pokemon.<br/>
+                - You can reroll specific IVs at a cost of 1 vote coin/reroll. Uncommon+ Patreon supporters have the ability to view specific IV numbers for their buddies.<br/>
+                - You can gain exp for Pokemon in your team using an <img src="xpshare.png" alt="[EXP]" class="xpshare"> EXP Share as well, which is buyable from the shop for a hefty price. The exp share gives bonus exp to all members of your team (excluding your buddy if it is also on your team).<br/>
+                - All buddies start off with 2 moves. You can buy new moves for your buddy from ;moves, which will be useful for battling! More buyable moves will be added to the Pokemon as it is still a work in progress.<br/>
+                - IVs, Friendship, Level, and XP can be inherited by the evolution (if you have a profile for it) if the values are higher from the pre-evolution.<br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Evolution Feature</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                - Gaining <img src="exp.png" alt="[EXP]" class="exp"> will level up your Pokemon, which increases their stats and allows you to evolve the Pokemon once you reach the required level (if it has an evolution).<br/>
+                - Some Pokemon require friendship or evolution stones to evolve, while others simply have a level requirement.<br/>
+                - Evolving a Pokemon that has more than 1 different evolution will randomize what you get from evolving (i.e. if you evolve an Eevee, you have an equal chance to obtain any particular evolution of it, as long as it's in the game).<br/>
+                - You can receive Rare Candies from lootboxes, at half the rate of Masterballs. Rare candies increase the level of your buddy by 1.<br/>
+                Note that Rare Candies doesn't upgrade the  <img src="heart.png" alt="[Friendship]" class="heart">  Level of a pokemon<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to Select a Buddy</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Type ;buddy set #(number of the pokemon you want as buddy).<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Minimum and Maximum catches required to hatch an Egg <img src="egg.png" alt="[egg]" class="egg"></h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Eggs reach the READY TO HATCH! state anywhere between 30 to 130 catches.<br/>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>

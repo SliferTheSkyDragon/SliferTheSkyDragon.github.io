@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rarsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT: 25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How rare are Shinies or Legendaries to encounter</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                1/8192 for <img src="shiny.png" alt="[pkb]" class="shiny"> and 1/666 for <img src="legend.png" alt="[pkb]" class="legend">.<br/>
+                Shiny charms <img src="charm.png" alt="[pkb]" class="charm"> increase your shiny rate by 1% each permanently, and you can buy them for 50<img src="token.png" alt="[Vote Coins]" class="token"> each at ;shop (up to 5 max).<br/>
+                Golden razz berries <img src="berry.png" alt="[pkb]" class="berry"> sets your <img src="legend.png" alt="[pkb]" class="legend"> rate to 1/500 for 50 encounters. These can be obtained primarily from lootboxes <img src="loot.png" alt="[pkb]" class="loot"> through ;vote or quests rewards.<br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">List of Rarities In-game</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Commun <img src="common.png" alt="[pkb]" class="common"> , Uncommun <img src="uncommon.png" alt="[pkb]" class="uncommon"> , Rare <img src="rare.png" alt="[pkb]" class="rare"> , Super Rare <img src="superrare.png" alt="[pkb]" class="superrare"> , Legendary <img src="legend.png" alt="[pkb]" class="legend"> , Shiny <img src="shiny.png" alt="[pkb]" class="shiny">, Golden <img src="golden.png" alt="[pkb]" class="shiny"><br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Catch Rate Table by Rarity/Balls used</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="catchchart.png" alt="[pkb]" class="catchchart">        
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Can you decrease or eliminate the 7 second wait timer for catching Pokemon?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                No. Without the wait timer, the bot would be overloaded by traffic. In the future, the wait timer may actually see an increase due to the volume of users on PokeMeow.<br/>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="itemsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT: 25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to buy Pokeballs</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                ;shops then read the explain at the bottom<br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to Obtain Lootboxes</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                You can obtain lootboxes by completing Quest, by completing different catching streak and by Voting<br/>
+                To open them, Type ;lootbox, or ;items open lootbox<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">What to get from Lootboxes</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                You have a chance at receiving <img src="pkb.png" alt="[pkb]" class="common">  <img src="gb.png" alt="[pkb]" class="common">  <img src="ub.png" alt="[pkb]" class="common">  and even a  <img src="mb.png" alt="[pkb]" class="mb">  if you're lucky! You can also get other items such as  <img src="coin.png" alt="[pkb]" class="common"> <img src="repel.png" alt="[pkb]" class="common"> <img src="quest.png" alt="[pkb]" class="common"> and <img src="berry.png" alt="[pkb]" class="common">.<br/>
+                New items will be added to lootboxes as they are introduced into the game.<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to Obtain Masterballs</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                <img src="masterball.png" alt="[pkb]" class="+">            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Available items in the game and their uses
+                </h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                -Swap Tokens : these items obtainable via quest are redeemable using the ;swap command and will let you swap without the standard cost<br/>
+                <br/>
+                -Amulet coins : Amulet coins are a must for those who want to get lots of coins, you can have 10 maximum and each one you buy gives a 5% bonus each time you catch a Pokemon, all together gaining 50%. Available from the shop<br/>
+                <br/>
+                -Golden Razzberry : These berries are handy for those wanting to hunt legends, each berry used with the command ;grazz all or ;grazz (amount) boosts your encounter chance to 1/500 for the next 50 encounters.<br/>
+                <br/>
+                -Quest Scroll Reset : This scroll accessible from opening lootboxes are handing for resetting quests you find tedious or you would prefer a better one. Using the command ;quest reset (number quest you want to reset) will delete that one and make you able to get a new one with the ;q command <br/>
+                <br/>
+                -Exp share : This item is ideal for training up your pokemon fast for the upcoming battle feature, it’s only available in the shop and you only need 1!<br/>
+                <br/>
+                -Shiny Charm : These items are handy for those who want to collect, hoard and try for a shiny living dex. They are for purchase in the shop for 50 vote coins each, they stack up to 5 and give you a 1% boost for each to a maximum of 5%. That brings the shiny chance from 1/8192 down to 1/7802<br/>
+                <br/>
+                -Repel These are useful if you are tired of getting all those pesky commons, these reduce the rate commons will spawn and are great for stacking with grazz berries. They activate using the command ;repel (amount) or ;repel all and they last for 30 encounters each<br/>
+                <br/>        
+            </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>

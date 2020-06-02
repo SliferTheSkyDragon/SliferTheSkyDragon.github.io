@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokesys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT: 25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Generations of Pokemon currently in the game</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Kanto, Johto, Hoenn, and Sinnoh Pokemon are currently available. I will be releasing the other regions slowly as the bot gains popularity!
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to view your Pokemons</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Type ;box or ;pc            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to Re-order your Box by Rarity/Recently caught</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Simpy type 'sort' without prefix to set the view you want        </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Maximum Level of Pokemon</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                The Maximum Level of a Pokemon is 100.            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Total Count of Specific pokemon In-game</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Type ;dex {pokemonname or #} to view information on specific Pokemon (including how many are in-game, and how many you own).</p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Does ;release duplicates release my Shinies, Legendaries, or Goldens?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                No. It only releases your duplicate Commons, Uncommons, Rares, and Super Rares.<br/>
+                The only way to release Legendary pokemons is to do it Manually<br/>
+                Golden cannot be released.</p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Can you prevent the release of Pokemon That you want to keep?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                You can use these command to Lock some Pokemons you dont want to Release<br/>
+                ;release lock {pokename or dexnumber} -> locks a Pokemon from being released.<br/>
+                ;release lock {rarity} -> lock a specific rarity type from being released.<br/>
+                You can also unlock them using ;release unlock {pokename or dexnumber}</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>

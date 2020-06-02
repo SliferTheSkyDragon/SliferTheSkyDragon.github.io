@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swapsys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"<></script>
+    </head>
+<body>
+    <div class="accordion">
+		<img style="position:relative; LEFT: 25%; WIDTH:650px; HEIGHT:auto" src="meow.png" alt="[pkb]" class="">
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">What is PokeSwap and What does it do?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                ;swap is a feature lets you swap out a Pokemon of your choice to receive a completely random one.<br/>
+            </p>
+            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">How to earn Swap Tickets?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                You can earn 2 free <img src="ticket.svg" alt="[pkb]" class="ticket"> Swap Tokens every day, by typing ;swap (view your ;checklist to see when they're available).<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Can i use PokeSwap without Tickets?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Any additional swaps cost <img src="coin.png" alt="[pkb]" class="coin"> 5,000 PokeCoins per swap (2.5k <img src="coin.png" alt="[pkb]" class="coin"> for Patreon)<br/>
+            </p>
+        </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">Can i obtain Legendaries, Shinies, and Goldens from PokeSwap?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Here are the Shiny that you can get from PokeSwap<br/>
+                <img src="shiny.png" alt="[pkb]" class="coin"> :43: Oddish, <img src="shiny.png" alt="[pkb]" class="coin">: :92: Gastly, <img src="shiny.png" alt="[pkb]" class="coin"> :236: Tyrogue, <img src="shiny.png" alt="[pkb]" class="coin">: :280: Ralts and <img src="shiny.png" alt="[pkb]" class="coin"> :374: Beldum!<br/>
+                You also have a chance at obtaining a <img src="golden.png" alt="[pkb]" class="coin"> :374_: Beldum if you're extremely lucky.            </div>
+
+        <div class="accordion-item">
+            <div class="item-header">
+                <h1 class="title">What are Multipliers?</h1>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">
+                Every 20 swaps will increase your <img src="fire.svg" alt="[pkb]" class="fire"> Multiplier by 1% (max 10%). Maxing out your Multiplier to 10% gives an additional 5% boost, for a total boost of 15%. Multipliers reset at 12AM EST every day.<br/>
+                Multipliers increase your chances at receiving exclusive <img src="shiny.png" alt="[pkb]" class="coin"> or <img src="golden.png" alt="[pkb]" class="coin"> Pokemon (a multiplier of 1.15x increases your Shiny/Golden odds by 15% for that day)<br/>
+                Swapping out Shinies <img src="shiny.png" alt="[pkb]" class="coin"> or Goldens <img src="golden.png" alt="[pkb]" class="coin"> DOES boost your rate (slightly). Do this at your own risk<br/>
+                <br/>        
+            </div>
+    </div>
+
+    <script type="text/javascript">
+	  $(".item-header").click(function(){
+		if($(this).parent().hasClass("active")) {
+		  $(this).parent().removeClass("active");
+		  $(this).children(".icon").text("+");
+		  return
+	  } else {
+		  $(this).parent().addClass("active");
+		  $(this).children(".icon").text("-");
+	  }
+	});
+    </script>
+  </body>
+</html>
