@@ -18,6 +18,21 @@ body{
 	padding: 20px;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    background: white;
+}
+
+.tableText{
+    color: #000;
+    padding: 0 6px;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
 .accordion-item{
     border-bottom: 1px solid #f1f1f1;
     padding: 20px 0;
@@ -56,6 +71,11 @@ body{
     max-height: 0;
 	overflow: hidden;
 	text-align: center;
+}
+
+.accordion-item.active .tableText{
+    max-height: 600px;
+    transition: .4s linear;
 }
 
 .accordion-item.active .text{

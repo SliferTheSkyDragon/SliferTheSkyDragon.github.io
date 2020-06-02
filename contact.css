@@ -2,12 +2,15 @@ body{
   margin: 0;
   padding: 0;
   font-family: "montserrat",sans-serif;
+    justify-content: center;
+    align-content: center;
+    display:grid;
+    
 }
 .container{
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   text-align: center;
 }
 .contact-method{
